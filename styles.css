@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.converter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input-section, .output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"], input[type="text"] {
+    width: 160px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
+    outline: none;
+}
+
+select {
+    width: 160px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    font-size: 1em;
+    background-color: #e9eef3;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
+    outline: none;
+}
+
+.arrow {
+    font-size: 2.5em;
+    color: #34495e;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #2980b9;
+}
+
+.convert-btn {
+    background: linear-gradient(135deg, #2980b9, #2c3e50);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.convert-btn:hover {
+    background: linear-gradient(135deg, #1a5276, #2c3e50);
+    transform: translateY(-3px);
+}
+
+.convert-btn:active {
+    transform: translateY(1px);
+}
+
